@@ -3,8 +3,6 @@ var marks = 0;
 var name = prompt("What is your name?");
 alert("Welcome to my personal page " + name );
 
-
-
 var food = prompt("Am i a food lover?(y/n)(yes/no)");
 
 if (food.toLowerCase() === "y" || food.toLowerCase() === "yes"){
@@ -72,4 +70,55 @@ alert("The answer must be yes/no , you have 0 mark on this question sorry :(");
 // console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
 }
 
-alert ("your mark is : " + marks + " out of 5 , thank you for doing this quiz my friend " + name);
+
+var myNumber = 6;
+for(var i=0 ; i<4; i++){
+    var numberGuessing = prompt("Guess my lucky number");
+    if (numberGuessing >10){
+        alert("This number is too high!");
+    
+    }
+    else if (numberGuessing < 2){
+        alert("This number is too low!");
+    
+}
+    else if(numberGuessing >= 2 && numberGuessing <6 || numberGuessing >6 && numberGuessing <=10){
+        alert("MAN, you so close!");
+        
+    }
+    
+    else{
+        marks = marks+1;
+        break;
+        }
+    
+    
+    
+}
+
+
+var q7=0;
+
+
+var favCar =["bmw" , "mercedes" , "opel" , "nissan" , "kia" , "dudge" , "golf" , "oudi"];
+
+for(var i=0 ; i<6 ; i++){
+    var bestCar = prompt("Guess what is my favorite cars type").toLowerCase();
+
+    for(var j=0 ; j<favCar.length;j++){ 
+        if (bestCar === favCar[j] ){
+            q7=q7+1;
+            break;
+
+        }
+      
+   }
+  
+
+
+}
+
+if(q7 >= 1)
+  marks=marks+1;
+
+  alert("Your score is: "+marks+" out of 7 , thank you for doing this quiz "+name);
