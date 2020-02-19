@@ -88,6 +88,7 @@ for(var i=0 ; i<4; i++){
     }
     
     else{
+        alert("CORRECT!")
         marks = marks+1;
         break;
         }
@@ -107,18 +108,20 @@ for(var i=0 ; i<6 ; i++){
 
     for(var j=0 ; j<favCar.length;j++){ 
         if (bestCar === favCar[j] ){
+            marks=marks+1;
             q7=q7+1;
             break;
 
         }
       
    }
-  
+  if(q7==1){
+      break;
+  }
 
 
 }
 
-if(q7 >= 1)
-  marks=marks+1;
+
 
   alert("Your score is: "+marks+" out of 7 , thank you for doing this quiz "+name);
