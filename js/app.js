@@ -1,15 +1,18 @@
 'use strict'
 var marks = 0;
 var name = prompt("What is your name?");
-alert("Welcome to my personal page " + name );
-
+alert("Welcome to my personal page " + name);
+FirstsQuestions();
+luckyNumber();
+Cars();
+function FirstsQuestions (){
 var food = prompt("Am i a food lover?(y/n)(yes/no)");
 
-if (food.toLowerCase() === "y" || food.toLowerCase() === "yes"){
-    marks= marks + 1;
+if (food.toLowerCase() === "y" || food.toLowerCase() === "yes") {
+    marks = marks + 1;
     alert("good this is the first correct answer!");
     // console.log("good this is the first correct answer!");
-} else if (food.toLowerCase() === "no" || food.toLowerCase() === "n"){
+} else if (food.toLowerCase() === "no" || food.toLowerCase() === "n") {
     alert("oops , wrong one");
     // console.log("oops , wrong one");
 } else {
@@ -19,12 +22,12 @@ if (food.toLowerCase() === "y" || food.toLowerCase() === "yes"){
 
 
 var sport = prompt("Am i a Barcelona club fan?(y/n)(yes/no)");
-if (sport.toLowerCase() === "yes" || sport.toLowerCase() === "y"){
-    marks= marks + 1;
+if (sport.toLowerCase() === "yes" || sport.toLowerCase() === "y") {
+    marks = marks + 1;
     alert("good job! im a great fan <3");
     // console.log("good job! im a great fan <3");
-} else if (sport.toLowerCase() === "no" || sport.toLowerCase() === "n"){
-    
+} else if (sport.toLowerCase() === "no" || sport.toLowerCase() === "n") {
+
     alert("dude, im the biggest fan :(");
     // console.log("dude, im the biggest fan :(");
 } else {
@@ -32,12 +35,12 @@ if (sport.toLowerCase() === "yes" || sport.toLowerCase() === "y"){
     // console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
 }
 var animal = prompt("Am i an animal's lover?(y/n)(yes/no)");
-if (animal.toLowerCase() === "yes" || animal.toLowerCase() === "y"){
-    
+if (animal.toLowerCase() === "yes" || animal.toLowerCase() === "y") {
+
     alert("nooo , i realy hates all animals :(");
     // console.log("nooo , i realy hates all animals :(");
-} else if (animal.toLowerCase() === "no" || animal.toLowerCase() === "n"){
-    marks= marks + 1;
+} else if (animal.toLowerCase() === "no" || animal.toLowerCase() === "n") {
+    marks = marks + 1;
     alert("excelent , correct answer!)");
     // console.log("excelent , correct answer!)");
 } else {
@@ -45,83 +48,88 @@ if (animal.toLowerCase() === "yes" || animal.toLowerCase() === "y"){
     // console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
 }
 var movie = prompt("Do i love movies?(yes/no)(y/n)");
-if (movie.toLowerCase() === "yes" || movie.toLowerCase() === "y"){
-marks= marks + 1;
-alert("yes , I'm in love with movies");
-// console.log("yes , I'm in love with movies");
-} else if (movie.toLowerCase() === "no" || movie.toLowerCase() === "n"){
-alert("sorry but I'm in love with movies dude!");
-// console.log("sorry but I'm in love with movies dude!");
+if (movie.toLowerCase() === "yes" || movie.toLowerCase() === "y") {
+    marks = marks + 1;
+    alert("yes , I'm in love with movies");
+    // console.log("yes , I'm in love with movies");
+} else if (movie.toLowerCase() === "no" || movie.toLowerCase() === "n") {
+    alert("sorry but I'm in love with movies dude!");
+    // console.log("sorry but I'm in love with movies dude!");
 } else {
-alert("The answer must be yes/no , you have 0 mark on this question sorry :(");
-// console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
+    alert("The answer must be yes/no , you have 0 mark on this question sorry :(");
+    // console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
 }
 
-var smoke= prompt("Am I smoker?(yes/no)(y/n)");
-if (smoke.toLowerCase() === "yes" || smoke.toLowerCase() === "y"){
-marks= marks+ 1;
-alert("unfortunately correct answer ");
-// console.log("unfortunately correct answer");
-} else if (smoke.toLowerCase() === "no" || smoke.toLowerCase() === "n"){
-alert("no I'm a smoker");
-// console.log("no I'm a smoker");
+var smoke = prompt("Am I smoker?(yes/no)(y/n)");
+if (smoke.toLowerCase() === "yes" || smoke.toLowerCase() === "y") {
+    marks = marks + 1;
+    alert("unfortunately correct answer ");
+    // console.log("unfortunately correct answer");
+} else if (smoke.toLowerCase() === "no" || smoke.toLowerCase() === "n") {
+    alert("no I'm a smoker");
+    // console.log("no I'm a smoker");
 } else {
-alert("The answer must be yes/no , you have 0 mark on this question sorry :(");
-// console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
+    alert("The answer must be yes/no , you have 0 mark on this question sorry :(");
+    // console.log("The answer must be yes/no , you have 0 mark on this question sorry :(");
+}
 }
 
+
+function luckyNumber(){
 
 var myNumber = 6;
-for(var i=0 ; i<4; i++){
+for (var i = 0; i < 4; i++) {
     var numberGuessing = prompt("Guess my lucky number");
-    if (numberGuessing >10){
+    if (numberGuessing > 10) {
         alert("This number is too high!");
-    
+
     }
-    else if (numberGuessing < 2){
+    else if (numberGuessing < 2) {
         alert("This number is too low!");
-    
-}
-    else if(numberGuessing >= 2 && numberGuessing <6 || numberGuessing >6 && numberGuessing <=10){
-        alert("MAN, you so close!");
-        
+
     }
-    
-    else{
+    else if (numberGuessing >= 2 && numberGuessing < 6 || numberGuessing > 6 && numberGuessing <= 10) {
+        alert("MAN, you so close!");
+
+    }
+
+    else {
         alert("CORRECT!")
-        marks = marks+1;
+        marks = marks + 1;
         break;
-        }
-    
-    
-    
+    }
+
+
+
+}
 }
 
 
-var q7=0;
+function Cars(){
+var q7 = 0;
 
 
-var favCar =["bmw" , "mercedes" , "opel" , "nissan" , "kia" , "dudge" , "golf" , "oudi"];
+var favCar = ["bmw", "mercedes", "opel", "nissan", "kia", "dudge", "golf", "oudi"];
 
-for(var i=0 ; i<6 ; i++){
+for (var i = 0; i < 6; i++) {
     var bestCar = prompt("Guess what is my favorite cars type").toLowerCase();
 
-    for(var j=0 ; j<favCar.length;j++){ 
-        if (bestCar === favCar[j] ){
-            marks=marks+1;
-            q7=q7+1;
+    for (var j = 0; j < favCar.length; j++) {
+        if (bestCar === favCar[j]) {
+            marks = marks + 1;
+            q7 = q7 + 1;
             break;
 
         }
-      
-   }
-  if(q7==1){
-      break;
-  }
+
+    }
+    if (q7 == 1) {
+        break;
+    }
 
 
 }
+}
 
 
-
-  alert("Your score is: "+marks+" out of 7 , thank you for doing this quiz "+name);
+alert("Your score is: " + marks + " out of 7 , thank you for doing this quiz " + name);
